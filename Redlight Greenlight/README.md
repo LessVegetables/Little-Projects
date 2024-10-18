@@ -37,6 +37,10 @@ At any point during the game, you can press `ESCAPE` or `Q` to quit.
 * Doll Music: Not mine, but the source is lost.
 * Gunshot Sound: [From SampleFocus By Jacob Liotine](https://samplefocus.com/samples/ak47-machine-gun-spray-fx).
 
+## License
+This project is released under the [Unlicense](./UNLICENSE.txt), which means the code is dedicated to the public domain, and you can use it freely for any purpose. However, this license applies **only to the code** found in this directory (and subdirectories).
+
+**Assets Notice**: The assets included in this project, such as images and sounds, are not covered by the Unlicense. They are royalty-free, but they may have their own usage restrictions. Please check the individual sources of the assets for their specific licensing terms.
 
 ## Installation Guide
 
