@@ -5,6 +5,7 @@ import time
 from playsound import playsound
 import random
 
+threshold = 0.96
 
 # Open the default camera (usually 0)
 cap = cv2.VideoCapture(1, cv2.CAP_AVFOUNDATION)  # AVFoundation is the default on macOS
@@ -114,7 +115,7 @@ while True:
             score, diff = structural_similarity(firstFrameBlurred, secondFrameBlurred, full=True)
             print("Similarity Score: {:.3f}%".format(score * 100))
 
-            if score < 0.95:
+            if score < threshold:
                 print("YOU MOVED YOU DIED")
                 stoplight = cv2.imread("redeyes.png")
                 cv2.imshow("Stoplight", stoplight)
