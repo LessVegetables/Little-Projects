@@ -4,11 +4,16 @@ from skimage.metrics import structural_similarity
 import time
 from playsound import playsound
 import random
+import platform
 
 threshold = 0.96
 
+
 # Open the default camera (usually 0)
-cap = cv2.VideoCapture(1, cv2.CAP_AVFOUNDATION)  # AVFoundation is the default on macOS
+if platform.system() == "Darwin":  # macOS
+    cap = cv2.VideoCapture(1, cv2.CAP_AVFOUNDATION)  # AVFoundation is the default on macOS
+else:
+    cap = cv2.VideoCapture(0)
 
 redLight = 0
 
