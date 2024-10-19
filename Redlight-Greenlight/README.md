@@ -29,7 +29,8 @@ At any point during the game, you can press `ESCAPE` or `Q` to quit.
 * **Background movement**: If someone walks behind the player while playing, the game may falsely detect motion and end.
 
 ## Improvements
-* Add a time limit to press `SPACE` during gameplay to increase difficulty
+* Add a time limit to press `SPACE` during gameplay to increase difficulty.
+* Add multithreading for a smoother experience.
 
 
 ## Sources
